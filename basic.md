@@ -105,6 +105,8 @@ go test [build/test flags] [packages] [build/test flags & test binary flags]
   go tool cover -html=c.out -o coverage.html
   ```
 
++ [Testivus On Test Coverage](http://blog.csdn.net/win_lin/article/details/74551803)
+
 #### 基准测试
 
 ​	基准测试是测量一个程序在固定工作负载下的性能。在Go语言中，基准测试函数和普通测试函数写法类似，但是以Benchmark为前缀名，并且带有一个`*testing.B`类型的参数；`*testing.B`参数除了提供和`*testing.T`类似的方法，还有额外一些和性能测量相关的方法。它还提供了一个整数N，用于指定操作执行的循环次数。
