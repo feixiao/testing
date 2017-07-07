@@ -1,0 +1,2 @@
+# testing
+Testing in golang
