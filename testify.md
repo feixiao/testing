@@ -76,10 +76,36 @@ func (_m *Stringer) String() string {
 ```
 
 
+#### Testing suite interfaces and functions
 
+​	使用[testify/suite](http://godoc.org/github.com/stretchr/testify/suite) 我们可以基于struct构建测试的初始化环境，并且在测试完成之后恢复环境，通过SetupTest和TearDownSuite接口。
 
+```go
+type ExampleTestSuite struct {
+	suite.Suite
+	VariableThatShouldStartAtFive int
+}
 
-
+// 准备测试环境
+func (suite *ExampleTestSuite) SetupTest() {
+	log.Println("SetupTest")
+	suite.VariableThatShouldStartAtFive = 5
+}
+// 恢复测试环境
+func (suite *ExampleTestSuite) TearDownTest() {
+	log.Println("TearDownTest")
+}
+// 测试案例
+func (suite *ExampleTestSuite) TestExample() {
+	assert.Equal(suite.T(), 5, suite.VariableThatShouldStartAtFive)
+	suite.Equal(5, suite.VariableThatShouldStartAtFive)
+}
+// 执行ExampleTestSuite结构体里面的全部测试函数
+func TestExampleTestSuite(t *testing.T) {
+	// 运行ExampleTestSuite中Test开始的函数
+	suite.Run(t, new(ExampleTestSuite))
+}
+```
 
 #### 参考资料
 
