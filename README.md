@@ -12,4 +12,5 @@
 #### 参考资料
 + [go-testing-toolbox](https://nathany.com/go-testing-toolbox/)
 + 《阿里巴巴Java开发手册》
++ [《都100%代码覆盖了，还会有什么问题？》](http://insights.thoughtworks.cn/code-coverage-2/)
 
