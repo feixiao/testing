@@ -6,8 +6,10 @@
 + [Testify](./testify.md)
 + [HTTP-Test](./http_test.md)
 + [travis-ci]()
++ [单元测试指导建议](./单元测试建议.pdf)
 
 
 #### 参考资料
 + [go-testing-toolbox](https://nathany.com/go-testing-toolbox/)
++ 《阿里巴巴Java开发手册》
 
