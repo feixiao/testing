@@ -37,7 +37,9 @@
 
   ```
   // 生成上述代码的表格驱动测试代码，文件名为tdt_test.go
-  gotests -all -w  tdt.go    
+  gotests -all -w  tdt.go
+
+  // Visual Studio Code右键也可以自动生成测试代码
   ```
 
   以Add为例，分析生成的代码

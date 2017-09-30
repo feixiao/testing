@@ -28,3 +28,20 @@ func TestMockClient(t *testing.T) {
 	fmt.Println(resp.Header.Get("Content-Type"))
 	fmt.Println(string(body))
 }
+
+func TestServerReadErr(t *testing.T) {
+	handler := func(w http.ResponseWriter, r *http.Request) {
+		data, err := ioutil.ReadAll(r.Body)
+		if err != nil {
+			w.WriteHeader(http.StatusBadRequest)
+			return
+		}
+		io.WriteString(w, fmt.Sprintf("<html><body>Hello %s!</body></html>", string(data)))
+	}
+
+	req := httptest.NewRequest("GET", "http://example.com", nil)
+	w := httptest.NewRecorder()
+
+	// 调用处理逻辑
+	handler(w, req)
+}
