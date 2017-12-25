@@ -5,8 +5,8 @@
 + [go-mock](./mock.md)
 + [Testify](./testify.md)
 + [HTTP-Test](./http_test.md)
-+ [ci](./ci.md)
 + [单元测试指导建议](./单元测试建议.pdf)
++ [持续递交Golang项目](http://feixiao.github.io/2017/08/17/BuildGolangProjectInJenkins/)
 
 
 #### 参考资料
