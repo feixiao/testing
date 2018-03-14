@@ -6,6 +6,8 @@
 + [Testify](./testify.md)
 + [HTTP-Test](./http_test.md)
 + [单元测试指导建议](./单元测试建议.pdf)
++ [锁竞争检测](https://github.com/sasha-s/go-deadlock)
+  + 用sync "github.com/sasha-s/go-deadlock" 替换 "sync" 执行单元测试，检测死锁问题
 + [持续递交Golang项目](http://feixiao.github.io/2017/08/17/BuildGolangProjectInJenkins/)
 
 
