@@ -10,7 +10,7 @@
   + 用sync "github.com/sasha-s/go-deadlock" 替换 "sync" 执行单元测试，检测死锁问题
 + [持续递交Golang项目](http://feixiao.github.io/2017/08/17/BuildGolangProjectInJenkins/)
 + [《Geotechnical 单元测试准则》](https://github.com/yangyubo/zh-unit-testing-guidelines) 
-
++ [《Golang 代码质量持续检测》](https://github.com/developer-learning/night-reading-go/blob/master/articles/sonarqube-for-golang/sonarqube-for-golang.md)
 #### 参考资料
 + [go-testing-toolbox](https://nathany.com/go-testing-toolbox/)
 + 《阿里巴巴Java开发手册》
