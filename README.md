@@ -9,6 +9,7 @@
 + [锁竞争检测](https://github.com/sasha-s/go-deadlock)
   + 用sync "github.com/sasha-s/go-deadlock" 替换 "sync" 执行单元测试，检测死锁问题
 + [持续递交Golang项目](http://feixiao.github.io/2017/08/17/BuildGolangProjectInJenkins/)
++ [《Golang基于Gitlab CI/CD部署方案》](http://www.chairis.cn/blog/article/96)
 + [《Geotechnical 单元测试准则》](https://github.com/yangyubo/zh-unit-testing-guidelines) 
 + [《Golang 代码质量持续检测》](https://github.com/developer-learning/night-reading-go/blob/master/articles/sonarqube-for-golang/sonarqube-for-golang.md)
 #### 参考资料
